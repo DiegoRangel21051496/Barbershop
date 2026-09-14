@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Santos Barber Shop - cortes, fades, barba y estilo premium." />
+  <title>Santos Barber Shop</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="cursor-glow"></div>
+
+  <header class="topbar" id="inicio">
+    <nav class="navbar container">
+      <a class="brand" href="#inicio" aria-label="Santos Barber Shop - Inicio">
+        <span class="brand-mark">S</span>
+        <span class="brand-text">
+          <strong>SANTOS</strong>
+          <small>BARBER SHOP</small>
+        </span>
+      </a>
+
+      <button class="menu-toggle" aria-label="Abrir menú" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <div class="nav-links">
+        <a href="#inicio">Inicio</a>
+        <a href="#servicios">Servicios</a>
+        <a href="#galeria">Galería</a>
+        <a href="#nosotros">Nosotros</a>
+        <a href="#contacto">Contacto</a>
+        <a class="btn btn-small" href="#reservar">Reservar</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-overlay"></div>
+      <div class="hero-grain"></div>
+
+      <div class="container hero-content">
+        <p class="eyebrow reveal">ESTILO • PRECISIÓN • ACTITUD</p>
+        <h1 class="reveal">
+          TU ESTILO.<br />
+          <span>NUESTRA FIRMA.</span>
+        </h1>
+        <p class="hero-copy reveal">
+          Cortes modernos, fades, barba y grooming con atención al detalle.
+          En Santos Barber Shop no vienes solo por un corte: vienes por una experiencia.
+        </p>
+
+        <div class="hero-actions reveal">
+          <a href="#reservar" class="btn btn-primary">Reserva tu cita</a>
+          <a href="#servicios" class="btn btn-ghost">Ver servicios</a>
+        </div>
+
+        <div class="hero-stats reveal">
+          <div>
+            <strong>4.9</strong>
+            <span>Valoración</span>
+          </div>
+          <div>
+            <strong>+500</strong>
+            <span>Clientes</span>
+          </div>
+          <div>
+            <strong>100%</strong>
+            <span>Actitud</span>
+          </div>
+        </div>
+      </div>
+
+      <a class="scroll-indicator" href="#servicios" aria-label="Bajar a servicios">
+        <span></span>
+      </a>
+    </section>
+
+    <section class="marquee-section" aria-hidden="true">
+      <div class="marquee">
+        <div class="marquee-track">
+          <span>FADE</span><i>✦</i>
+          <span>BEARD</span><i>✦</i>
+          <span>STYLE</span><i>✦</i>
+          <span>PRECISION</span><i>✦</i>
+          <span>SANTOS</span><i>✦</i>
+          <span>FADE</span><i>✦</i>
+          <span>BEARD</span><i>✦</i>
+          <span>STYLE</span><i>✦</i>
+          <span>PRECISION</span><i>✦</i>
+          <span>SANTOS</span><i>✦</i>
+        </div>
+      </div>
+    </section>
+
+    <section class="section services" id="servicios">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow">NUESTROS SERVICIOS</p>
+          <h2>ELIGE TU <span>LOOK</span></h2>
+          <p>Servicios pensados para que salgas con un estilo limpio, actual y hecho para ti.</p>
+        </div>
+
+        <div class="service-grid">
+          <article class="service-card reveal">
+            <div class="service-number">01</div>
+            <div class="service-icon">✂</div>
+            <h3>Corte Clásico</h3>
+            <p>Corte a tijera o máquina, perfilado y acabado profesional.</p>
+            <strong>$180</strong>
+          </article>
+
+          <article class="service-card featured reveal">
+            <div class="service-badge">POPULAR</div>
+            <div class="service-number">02</div>
+            <div class="service-icon">⚡</div>
+            <h3>Fade Premium</h3>
+            <p>Degradado limpio con diseño, terminación y styling incluido.</p>
+            <strong>$220</strong>
+          </article>
+
+          <article class="service-card reveal">
+            <div class="service-number">03</div>
+            <div class="service-icon">♛</div>
+            <h3>Barba</h3>
+            <p>Perfilado, rebaje, toalla caliente y acabado con producto.</p>
+            <strong>$150</strong>
+          </article>
+
+          <article class="service-card reveal">
+            <div class="service-number">04</div>
+            <div class="service-icon">★</div>
+            <h3>Corte + Barba</h3>
+            <p>La experiencia completa para salir listo de pies a cabeza.</p>
+            <strong>$320</strong>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section gallery-section" id="galeria">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow">NUESTRO TRABAJO</p>
+          <h2>GALERÍA <span>SANTOS</span></h2>
+        </div>
+
+        <div class="gallery">
+          <figure class="gallery-item tall reveal">
+            <img src="https://images.unsplash.com/photo-1503951914875-452162b0f3f1?auto=format&fit=crop&w=1200&q=85" alt="Barbero realizando un corte">
+            <figcaption>Precision Cut</figcaption>
+          </figure>
+
+          <figure class="gallery-item reveal">
+            <img src="https://images.unsplash.com/photo-1621605815971-fbc98d665033?auto=format&fit=crop&w=1200&q=85" alt="Corte de cabello moderno">
+            <figcaption>Fresh Fade</figcaption>
+          </figure>
+
+          <figure class="gallery-item reveal">
+            <img src="https://images.unsplash.com/photo-1599351431202-1e0f0137899a?auto=format&fit=crop&w=1200&q=85" alt="Perfilado de barba">
+            <figcaption>Beard Detail</figcaption>
+          </figure>
+
+          <figure class="gallery-item wide reveal">
+            <img src="https://images.unsplash.com/photo-1585747860715-2ba37e788b70?auto=format&fit=crop&w=1400&q=85" alt="Interior moderno de barbería">
+            <figcaption>The Santos Experience</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="section about" id="nosotros">
+      <div class="container about-grid">
+        <div class="about-image reveal">
+          <img src="https://images.unsplash.com/photo-1593702295094-aea22597af65?auto=format&fit=crop&w=1200&q=85" alt="Barbero trabajando">
+          <div class="about-stamp">
+            <span>SANTOS • BARBER • SHOP •</span>
+          </div>
+        </div>
+
+        <div class="about-copy reveal">
+          <p class="eyebrow">MÁS QUE UN CORTE</p>
+          <h2>UNA BARBERÍA CON <span>IDENTIDAD</span></h2>
+          <p>
+            Santos Barber Shop combina técnicas clásicas con tendencias modernas.
+            Nuestro objetivo es que cada cliente encuentre un estilo que se sienta propio.
+          </p>
+
+          <div class="about-points">
+            <div><span>✓</span> Atención personalizada</div>
+            <div><span>✓</span> Herramientas sanitizadas</div>
+            <div><span>✓</span> Ambiente cómodo y moderno</div>
+            <div><span>✓</span> Acabados profesionales</div>
+          </div>
+
+          <a class="text-link" href="#reservar">Agenda tu próximo corte →</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section testimonials">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow">LO QUE DICEN</p>
+          <h2>CLIENTES <span>SANTOS</span></h2>
+        </div>
+
+        <div class="testimonial-slider reveal">
+          <button class="slider-btn prev" aria-label="Testimonio anterior">←</button>
+
+          <div class="testimonial active">
+            <div class="stars">★★★★★</div>
+            <blockquote>“El fade quedó exactamente como lo quería. Muy buen ambiente y atención.”</blockquote>
+            <p>— Carlos M.</p>
+          </div>
+
+          <div class="testimonial">
+            <div class="stars">★★★★★</div>
+            <blockquote>“Excelente trabajo con la barba. Se nota la atención al detalle.”</blockquote>
+            <p>— Luis R.</p>
+          </div>
+
+          <div class="testimonial">
+            <div class="stars">★★★★★</div>
+            <blockquote>“Buen servicio, lugar limpio y el corte quedó muy bien. Regreso seguro.”</blockquote>
+            <p>— Andrés V.</p>
+          </div>
+
+          <button class="slider-btn next" aria-label="Siguiente testimonio">→</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="section booking" id="reservar">
+      <div class="booking-bg"></div>
+      <div class="container booking-content reveal">
+        <p class="eyebrow">RESERVA TU LUGAR</p>
+        <h2>¿LISTO PARA UN <span>NUEVO LOOK?</span></h2>
+        <p>Escríbenos por WhatsApp y aparta tu cita.</p>
+
+        <a
+          class="btn btn-primary btn-large"
+          href="https://wa.me/5210000000000?text=Hola%20Santos%20Barber%20Shop,%20quiero%20agendar%20una%20cita."
+          target="_blank"
+          rel="noopener"
+        >
+          Abrir WhatsApp
+        </a>
+        <small class="booking-note">Cambia el número de WhatsApp en el archivo index.html.</small>
+      </div>
+    </section>
+
+    <section class="section contact" id="contacto">
+      <div class="container contact-grid">
+        <div class="contact-info reveal">
+          <p class="eyebrow">VISÍTANOS</p>
+          <h2>ENCUÉNTRANOS <span>FÁCIL</span></h2>
+
+          <div class="contact-list">
+            <div>
+              <span>📍</span>
+              <p><strong>Ubicación</strong><br>Polinesia 204, Col. Oceanía, C.P. 25290, Saltillo, Coahuila, México</p>
+            </div>
+            <div>
+              <span>🕒</span>
+              <p><strong>Horario</strong><br>Lun–Sáb: 10:00 AM – 8:00 PM<br>Dom: 11:00 AM – 5:00 PM</p>
+            </div>
+            <div>
+              <span>📞</span>
+              <p><strong>Contacto</strong><br>844 598 1611</p>
+            </div>
+          </div>
+        </div>
+
+<div class="map-card">
+    <iframe
+    src="https://www.google.com/maps?q=Santos%20BarberShop,%20Polinesia%20204,%20Ocean%C3%ADa,%2025290%20Saltillo,%20Coahuila&output=embed"
+    width="100%"
+    height="450"
+    style="border:0;"
+    allowfullscreen=""
+    loading="lazy"
+    referrerpolicy="no-referrer-when-downgrade">
+</iframe>
+</div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-grid">
+      <div>
+        <a class="brand footer-brand" href="#inicio">
+          <span class="brand-mark">S</span>
+          <span class="brand-text"><strong>SANTOS</strong><small>BARBER SHOP</small></span>
+        </a>
+        <p>Estilo, precisión y actitud.</p>
+      </div>
+
+      <div>
+        <h4>Navegación</h4>
+        <a href="#servicios">Servicios</a>
+        <a href="#galeria">Galería</a>
+        <a href="#nosotros">Nosotros</a>
+      </div>
+
+      <div>
+        <h4>Contacto</h4>
+        <a href="#reservar">Reservar</a>
+        <a href="#contacto">Ubicación</a>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© <span id="year"></span> Santos Barber Shop. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <!-- CHATBOT -->
+  <button class="chat-launcher" id="chatLauncher" aria-label="Abrir chat">
+    <span class="chat-pulse"></span>
+    💬
+  </button>
+
+  <aside class="chatbot" id="chatbot" aria-label="Chat de Santos Barber Shop">
+    <div class="chat-header">
+      <div class="chat-avatar">S</div>
+      <div>
+        <strong>Santos Assistant</strong>
+        <span><i></i> En línea</span>
+      </div>
+      <button id="closeChat" aria-label="Cerrar chat">×</button>
+    </div>
+
+    <div class="chat-messages" id="chatMessages">
+      <div class="message bot">
+        <p>¡Qué onda! 👋 Soy el asistente de Santos Barber Shop. ¿En qué te ayudo?</p>
+        <span>Ahora</span>
+      </div>
+    </div>
+
+    <div class="quick-replies" id="quickReplies">
+      <button data-question="precios">💈 Precios</button>
+      <button data-question="horario">🕒 Horario</button>
+      <button data-question="ubicacion">📍 Ubicación</button>
+      <button data-question="cita">📅 Agendar cita</button>
+    </div>
+
+    <form class="chat-input" id="chatForm">
+      <input id="chatInput" type="text" placeholder="Escribe tu mensaje..." autocomplete="off">
+      <button type="submit" aria-label="Enviar">➤</button>
+    </form>
+  </aside>
+
+  <script src="script.js"></script>
+</body>
+</html>
